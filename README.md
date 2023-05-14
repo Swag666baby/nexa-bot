@@ -18,3 +18,8 @@ I recommend using the forever library, however it is optional.
 node index.js
 ```
 or if you prefer to use forever library 
+```
+forever start --minUptime 1000 --spinSleepTime 1000 index.js
+```
+# functionalities 
+Nexa has several interesting features, such as: 
