@@ -1,0 +1,12 @@
+{
+  "name": "nexa-bot",
+  "version": "1.0.3",
+  "description": "um robo de whatsapp feito por um dev junior em javascript consumindo algumas apis, usando algumas bibliotecas e coisas do tipo",
+  "main": "index.js",
+  "repository": "https://github.com/swag666baby/nexa-bot",
+  "author": "swag666baby",
+  "license": "MIT",
+  "private": null,
+  "dependencies": {
+  }
+}
