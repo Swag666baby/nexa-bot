@@ -1,5 +1,5 @@
 # nexa-bot
-my humble robot made for WhatsApp using version 4.4.0 of the baileys library 
+my simply  robot made for WhatsApp using version 4.4.0 of the baileys library 
 
 # installation 
 ```
@@ -25,12 +25,13 @@ forever start --minUptime 1000 --spinSleepTime 1000 index.js
 # to work correctly: 
 *fill the .env file with the correct keys, youtube-node(google apis) and gpt(openai)*
 
-# functionalities Nexa has several interesting features, such as: 
+# functionalities Nexa has several interesting features, such as:
+
 *make stickers.*
 
 *a wide range of casino games.*
 
-*send nsfw content 
+*send nsfw content*
 
 *help with administration by banning, adding, changing the description, and the name of the group with great speed.*
 
