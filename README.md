@@ -21,5 +21,13 @@ or if you prefer to use forever library
 ```
 forever start --minUptime 1000 --spinSleepTime 1000 index.js
 ```
-# functionalities 
-Nexa has several interesting features, such as: 
+# functionalities Nexa has several interesting features, such as: 
+*make stickers.*
+
+*a wide range of casino games.*
+
+*help with administration by banning, adding, changing the description, and the name of the group with great speed.*
+
+*nexa is also able to search videos on YouTube, images on Google and even download music.*
+
+*nexa also has an artificial intelligence to generate images and answer questions.*
