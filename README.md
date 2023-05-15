@@ -21,10 +21,16 @@ or if you prefer to use forever library
 ```
 forever start --minUptime 1000 --spinSleepTime 1000 index.js
 ```
+
+# to work correctly: 
+*fill the .env file with the correct keys, youtube-node(google apis) and gpt(openai)*
+
 # functionalities Nexa has several interesting features, such as: 
 *make stickers.*
 
 *a wide range of casino games.*
+
+*send nsfw content 
 
 *help with administration by banning, adding, changing the description, and the name of the group with great speed.*
 
