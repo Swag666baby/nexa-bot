@@ -3,7 +3,7 @@ function antilink(fs, message, admin, antilinkGrupo, numeroUsuario, euBot, sock,
     const links = JSON.parse(fs.readFileSync(`./src/grupos/links.json`, 'utf-8'))
     const hasLink = links.some(link => message?.includes(link));
 
-    if(hasLink && !admin && antilinkGrupo == numeroUsuario != euBot){
+    if(hasLink && !admin && antilinkGrupo && numeroUsuario != euBot){
         sock.groupParticipantsUpdate(jid, [numero], "remove");
     }
 }
