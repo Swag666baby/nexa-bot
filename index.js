@@ -89,7 +89,7 @@ const startSock = async () => {
             
             setAdmin(admin, nexaAdmin, message, marcado, usuarioMarcado, sock, jid, msg, groupName, nameUser, nexaAdmin)
             setGroups(admin, message, dadosGrupo, fs, groupID, sock, jid, msg) 
-            antilink(fs, message, admin, antilinkGrupo, numeroUsuario, euBot, sock, jid, msg)
+            antilink(fs, message, admin, antilinkGrupo, numeroUsuario, euBot, sock, jid, numero)
             actions(action, sock, jid, actionMember, groupName)
             youtubeSearch(message, youTube, sock, jid, msg, ytdl, fs)
             imgSearch(message, gis, sock, jid, msg )
