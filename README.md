@@ -25,7 +25,7 @@ forever start --minUptime 1000 --spinSleepTime 1000 index.js
 # to work correctly: 
 *at the beginning of the index.js file change the value of the "euBot" variable to the new host number.* 
 
-*fill in the .env file with your openai key. *
+*fill in the .env file with your openai key.*
 
 # functionalities Nexa has several interesting features, such as:
 
