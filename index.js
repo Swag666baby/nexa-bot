@@ -6,21 +6,19 @@ const {Boom} = require("@hapi/boom")
 const ytdl = require('ytdl-core');
 const gis = require('g-i-s');
 const gtts = require('gtts');
-const YouTube = require('youtube-node');
 const { exec } = require('child_process');
 const moment = require("moment-timezone");
 const _ = require('lodash');
 const path = require('path');
+const YTB = require("youtube-sr").default;
+const babytube = require("babytube");
 require('dotenv').config();
 
 const {setGroups, actions, setAdmin, antilink} = require("./src/grupos");
-const {youtubeSearch, imgSearch} = require("./src/search")
+const {youtubeSearch, imgSearch, placaSearch, cnpjSearch, cepSearch, ipSearch} = require("./src/search")
 const {menu, nsfw, sticker, nexa} = require("./src/outros");
 const {ranking , give, getData, doar, agiotar, setPatentes, deleteUser, registro} = require("./src/cassino");
 const {gameBingo, gameRoleta, gameLoteria, gameDicionario, gameRoletaRussa, gameCacaNiquel} = require("./src/cassino/games/");
-
-const youTube = new YouTube();
-youTube.setKey(process.env.YOUTUBE_API_KEY);
 
 const { state } = useSingleFileAuthState("./auth_info.json");
 const startSock = async () => {
@@ -75,7 +73,7 @@ const startSock = async () => {
             const antilinkGrupo = dadosGrupo?.antilink
             const cassinoGrupo = dadosGrupo?.cassino
             const dadosUsuario = fs.existsSync(`./data-base/users/${numeroUsuario}.json`) ? JSON.parse(fs.readFileSync(`./data-base/users/${numeroUsuario}.json`, 'utf-8')) : "";
-            const dadosUsuarioMarcado = fs.existsSync(`./data-base/users/${usuarioMarcado}.json`) ? JSON.parse(fs.readFileSync(`./data-base/users/${usuarioMarcado}.json`, 'utf-8')) : "paciencia";
+            const dadosUsuarioMarcado = fs.existsSync(`./data-base/users/${usuarioMarcado}.json`) ? JSON.parse(fs.readFileSync(`./data-base/users/${usuarioMarcado}.json`, 'utf-8')) : console.log("error");
             function isAdmin(number) {
                 for (let i = 0; i < groupMembers.length; i++) {
                     if (groupMembers[i].id === number && groupMembers[i].admin === 'admin' || groupMembers[i].id === number && groupMembers[i].admin === 'superadmin') {
@@ -87,12 +85,16 @@ const startSock = async () => {
             const admin = isAdmin(numero)
             const nexaAdmin = isAdmin(`55${euBot}@s.whatsapp.net`)
             
+            placaSearch(message, axios, sock, jid, msg)
+            cnpjSearch(message, sock, jid, msg, axios)
+            cepSearch(message, sock, jid, msg, axios)
+            ipSearch(message, sock, jid, msg, axios)
             setAdmin(admin, nexaAdmin, message, marcado, usuarioMarcado, sock, jid, msg, groupName, nameUser, nexaAdmin)
             setGroups(admin, message, dadosGrupo, fs, groupID, sock, jid, msg) 
             antilink(fs, message, admin, antilinkGrupo, numeroUsuario, euBot, sock, jid, numero)
             actions(action, sock, jid, actionMember, groupName)
-            youtubeSearch(message, youTube, sock, jid, msg, ytdl, fs)
-            imgSearch(message, gis, sock, jid, msg )
+            youtubeSearch(message, YTB, sock, jid, msg, babytube)
+            //imgSearch(message, gis, sock, jid, msg )
             sticker(legendaFoto, downloadMediaMessage, msg, logger, sock, fs, exec, jid, msg, fs)
             menu(moment, prefix, nameUser, message, sock, jid, msg) 
             nsfw(nsfwGrupo, message, sock, jid, msg)
