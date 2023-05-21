@@ -7,8 +7,9 @@ git clone https://github.com/Swag666baby/nexa-bot
 cd nexa-bot
 ```
 ```
-yarn add axios fs pino @adiwajshing/baileys@4.4.0 dotenv gtts g-i-s ytdl-core@4.11.4 @hapi/boom lodash moment-timezone child_process youtube-node path
+yarn add axios fs pino @adiwajshing/baileys@4.4.0 dotenv gtts g-i-s ytdl-core@4.11.4 @hapi/boom lodash moment-timezone child_process path babytube youtube-sr
 apt-get install libwebp
+apt-get install python3
 ```
 I recommend using the forever library, however it is optional. 
 
