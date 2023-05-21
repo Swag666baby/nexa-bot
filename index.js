@@ -3,7 +3,6 @@ const fs = require("fs")
 const P = require("pino")
 const axios = require("axios")
 const {Boom} = require("@hapi/boom")
-const ytdl = require('ytdl-core');
 const gis = require('g-i-s');
 const gtts = require('gtts');
 const { exec } = require('child_process');
