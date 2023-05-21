@@ -85,10 +85,6 @@ const startSock = async () => {
             const admin = isAdmin(numero)
             const nexaAdmin = isAdmin(`55${euBot}@s.whatsapp.net`)
             
-            placaSearch(message, axios, sock, jid, msg)
-            cnpjSearch(message, sock, jid, msg, axios)
-            cepSearch(message, sock, jid, msg, axios)
-            ipSearch(message, sock, jid, msg, axios)
             setAdmin(admin, nexaAdmin, message, marcado, usuarioMarcado, sock, jid, msg, groupName, nameUser, nexaAdmin)
             setGroups(admin, message, dadosGrupo, fs, groupID, sock, jid, msg) 
             antilink(fs, message, admin, antilinkGrupo, numeroUsuario, euBot, sock, jid, numero)
