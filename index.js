@@ -15,7 +15,7 @@ const babytube = require("babytube");
 require('dotenv').config();
 
 const {setGroups, actions, setAdmin, antilink} = require("./src/grupos");
-const {youtubeSearch, imgSearch, placaSearch, cnpjSearch, cepSearch, ipSearch} = require("./src/search")
+const {youtubeSearch, imgSearch} = require("./src/search")
 const {menu, nsfw, sticker, nexa} = require("./src/outros");
 const {ranking , give, getData, doar, agiotar, setPatentes, deleteUser, registro} = require("./src/cassino");
 const {gameBingo, gameRoleta, gameLoteria, gameDicionario, gameRoletaRussa, gameCacaNiquel} = require("./src/cassino/games/");
