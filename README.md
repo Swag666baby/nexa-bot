@@ -6,24 +6,20 @@ my simply  robot made for WhatsApp using version 4.4.0 of the baileys library.
 git clone https://github.com/Swag666baby/nexa-bot
 cd nexa-bot
 ```
-## you can use the installer 
 ```
-bash install.sh
-```
-## or install everything manually 
-```
-yarn add axios fs pino @adiwajshing/baileys@4.4.0 dotenv gtts g-i-s @hapi/boom lodash moment-timezone child_process path babytube youtube-sr
+yarn add axios fs pino @adiwajshing/baileys@4.4.0 dotenv gtts g-i-s @hapi/boom lodash moment-timezone child_process path babytube youtube-sr qrcode-terminal forever
 apt-get install libwebp
 apt-get install python3
 ```
 I recommend using the forever library, however it is optional. 
 
 ## running 
+note: use forever only after reading the qrcode, as it does not show logs in real time but writes them to a file. 
 ### conventional way 
 ```
 node index.js
 ```
-### or if you prefer to use forever library 
+### or if you prefer to use forever library
 ```
 forever start --minUptime 1000 --spinSleepTime 1000 index.js
 ```
