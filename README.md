@@ -1,3 +1,5 @@
+# give me a star please⭐
+
 # nexa-bot
 my simply  robot made for WhatsApp using version 4.4.0 of the baileys library.
 
