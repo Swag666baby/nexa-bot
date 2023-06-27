@@ -21,11 +21,11 @@ const {gameBingo, gameRoleta, gameLoteria, gameDicionario, gameRoletaRussa, game
 
 const { state } = useSingleFileAuthState("./auth_info.json");
 const startSock = async () => {
-    const { version } = await fetchLatestBaileysVersion();
+    //const { version } = await fetchLatestBaileysVersion();
     const logger = P({ level: 'debug' })
     const sock = makeWASocket({
 	    logger: P({ level: 'debug' }),
-        version,
+        version: [2,2323,4],
         printQRInTerminal: true,
         auth: state,
     });
