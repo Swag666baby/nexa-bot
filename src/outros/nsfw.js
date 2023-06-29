@@ -9,24 +9,25 @@ function deleteImage(sock, jid, image){
 async function nsfwNexa(nsfwGrupo, message, sock, jid, msg){
     
     if(nsfwGrupo){
+        const url = "https://nsfw-api-p302.onrender.com/"
         if(message == "/hentai"){
-	        const image = await sock.sendMessage(jid, {image: {url: "https://nsfw-api-5xza.onrender.com/hentai"}, mimetype: 'image/jpeg' , caption: 'virgin god🧸'},{quoted:msg })
+	        const image = await sock.sendMessage(jid, {image: {url: `${url}hentai`}, mimetype: 'image/jpeg' , caption: 'virgin god🧸'},{quoted:msg })
 	        deleteImage(sock, jid, image)
         }
         if(message == "/yuri"){
-	        const image = await sock.sendMessage(jid, {image: {url: "https://nsfw-api-5xza.onrender.com/yuri"}, mimetype: 'image/jpeg' , caption: 'virgin god🧸'},{quoted:msg })
+	        const image = await sock.sendMessage(jid, {image: {url: `${url}yuri`}, mimetype: 'image/jpeg' , caption: 'virgin god🧸'},{quoted:msg })
 	        deleteImage(sock, jid, image)
         }
         if(message == "/bdsm"){
-	        const image = await sock.sendMessage(jid, {image: {url: "https://nsfw-api-5xza.onrender.com/bdsm"}, mimetype: 'image/jpeg' , caption: 'virgin god🧸'},{quoted:msg })
+	        const image = await sock.sendMessage(jid, {image: {url: `${url}bdsm`}, mimetype: 'image/jpeg' , caption: 'virgin god🧸'},{quoted:msg })
 	        deleteImage(sock, jid, image)
         }
         if(message == "/yaoi"){
-	        const image = await sock.sendMessage(jid, {image: {url: "https://nsfw-api-5xza.onrender.com/yaoi"}, mimetype: 'image/jpeg' , caption: 'virgin god🧸'},{quoted:msg })
+	        const image = await sock.sendMessage(jid, {image: {url: `${url}yaoi`}, mimetype: 'image/jpeg' , caption: 'virgin god🧸'},{quoted:msg })
 	        deleteImage(sock, jid, image)
 	    }
         if(message == "/trap"){
-	        const image = await sock.sendMessage(jid, {image: {url: "https://nsfw-api-5xza.onrender.com/trap"}, mimetype: 'image/jpeg' , caption: 'virgin god🧸'},{quoted:msg })
+	        const image = await sock.sendMessage(jid, {image: {url: `${url}trap`}, mimetype: 'image/jpeg' , caption: 'virgin god🧸'},{quoted:msg })
 	        deleteImage(sock, jid, image)
         }
     }else{
