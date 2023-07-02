@@ -43,46 +43,47 @@ forever start --minUptime 1000 --spinSleepTime 1000 index.js
 
 *nexa also has an artificial intelligence to generate images and answer questions.*
 
-| Comando | Descrição | Exemplo |
+| command | description | example | 
 |---------|-----------|---------|
-| /menu   | Exibe a lista de comandos disponíveis. | `/menu`|
-| /fecharg | Fecha um grupo. | `/fecharg` |
-| /abrirg | Abre um grupo. | `/abrirg` |
-| /promover | Promove um usuário a administrador. | `/promover *marcando a mensagem de usuario*` |
-| /rebaixar | Rebaixa um usuário de administrador. | `/rebaixar *marcando a mensagem de usuario*` |
-| /add | Adiciona um número de telefone ao grupo. | `/add +55123456789` |
-| /ban | Bane um usuário do grupo. | `/ban *marcando a mensagem de usuario*` |
-| /descg | Define a descrição do grupo. | `/descg Nova descrição` |
-| /nomeg | Define o nome do grupo. | `/nomeg Novo nome` |
-| /nivel | Exibe os dados do usuário. | `/nivel` |
-| /roleta | Realiza uma rodada de roleta. | `/roleta 10` |
-| /agiotar | Agiota uma quantia para o usuário. | `/agiotar 100 *marcando a mensagem de usuario*` |
-| /roletarussa | Joga uma partida de roleta russa. | `/roletarussa` |
-| /doar | Faz uma doação para outro usuário. | `/doar 50` |
-| /investigar | Inicia uma investigação em um usuário. | `/investigar *marcando a mensagem de usuario*` |
-| /loteria | Realiza um sorteio de loteria. | `/loteria 1 8` |
-| /dc | pede uma dica para o jogo. | `/dc dica` |
-| /dc | chuta a possivel palavra. | `/dc banana` |
-| /dc | troca a palavra. | `/dc restart` |
-| /bingo | Inicia uma partida de bingo. | `/bingo 7` |
-| /cacaniquel | Joga no caça-níquel. | `/cacaniquel` |
-| /ranking | Exibe o ranking dos usuários. | `/ranking` |
-| /hentai | Envia uma imagem de conteúdo hentai. | `/hentai` |
-| /yaoi | Envia uma imagem de conteúdo yaoi. | `/yaoi` |
-| /yuri | Envia uma imagem de conteúdo yuri. | `/yuri` |
-| /trap | Envia uma imagem de conteúdo trap. | `/trap` |
-| /bdsm | Envia uma imagem de conteúdo BDSM. | `/bdsm` |
-| /ytsearch | Realiza uma pesquisa de vídeo no YouTube. | `/ytsearch gatos engraçados` |
-| /imgsearch | Realiza uma pesquisa de imagens. | `/imgsearch cachorros fofinhos` |
-| /playmp3 | Reproduz um trecho de uma música. | `/playmp3 nome-da-musica` |
-| /nexaimg | gera uma imagem com inteligência artificial. | `/nexaimg cachorro branco` |
-| /antilink | Ativa ou desativa o recurso de anti-link. | `/antilink on` |
-| /nsfw | Ativa ou desativa o modo NSFW. | `/nsfw on` |
-| /cassino | Ativa ou desativa o recurso de cassino. | `/cassino off` |
-| /sticker | Converte uma foto em adesivo. | `/sticker` |
-| /give | Adiciona uma quantidade de experiência a um usuário. | `/give 50 | /dc | pede uma dica para o jogo. | `/dc dica` |` |
-| /setxp | Define a quantidade de experiência de um usuário. | `/setxp 100 | /dc | pede uma dica para o jogo. | `/dc dica` |` |
-| /deleteuser | Exclui um usuário do sistema. | `/deleteuser +55123456789` |
+| /menu   | Displays the list of available commands.  | `/menu`|
+| /fecharg | Closes a group.  | `/fecharg` |
+| /abrirg | Opens a group.  | `/abrirg` |
+| /promover | Promotes a user to an administrator.  | `/promover *marcando a mensagem de usuario*` |
+| /rebaixar | Demotes a user from admin.  | `/rebaixar *marcando a mensagem de usuario*` |
+| /add | Adds a phone number to the group.  | `/add +55123456789` |
+| /ban | Ban a user from the group.  | `/ban *marcando a mensagem de usuario*` |
+| /descg | Sets the group description.  | `/descg Nova descrição` |
+| /nomeg | Defines the name of the group.  | `/nomeg Novo nome` |
+| /nivel | Displays user data.  | `/nivel` |
+| /roleta | Play a round of roulette.  | `/roleta 10` |
+| /agiotar | Lenders an amount to the user.  | `/agiotar 100 *marcando a mensagem de usuario*` |
+| /roletarussa | Play a game of Russian roulette.  | `/roletarussa` |
+| /doar | Make a donation to another user.  | `/doar 50` |
+| /investigar | Starts an investigation on a user.  | `/investigar *marcando a mensagem de usuario*` |
+| /loteria | Performs a lottery draw.  | `/loteria 1 8` |
+| /dc | asks for a tip for the game.  | `/dc dica` |
+| /dc | guess the possible word.  | `/dc banana` |
+| /dc | change the word.  | `/dc restart` |
+| /bingo | Start a bingo game.  | `/bingo 7` |
+| /cacaniquel | Play the slot machine.  | `/cacaniquel` |
+| /ranking | Displays the ranking of users.  | `/ranking` |
+| /hentai | Upload a hentai content image.  | `/hentai` |
+| /yaoi | Upload a yaoi content image.  | `/yaoi` |
+| /yuri | Sends a yuri content image.  | `/yuri` |
+| /trap | Sends a trap content image.  | `/trap` |
+| /bdsm | Sends a BDSM content image.  | `/bdsm` |
+| /ytsearch | Performs a video search on YouTube. | `/ytsearch cute cats` |
+| /imgsearch | Performs an image search.  | `/imgsearch dog sitting ` |
+| /playmp3 | downloads a song.  | `/playmp3 all girls are the same` |
+| /nexaimg | generates an image with artificial intelligence.  | `/nexaimg cachorro branco` |
+| /antilink | enable or disable link protection | `/antilink on` |
+| /nsfw | Enables or disables NSFW mode.  | `/nsfw on` |
+| /cassino | Enables or disables the casino feature.  | `/cassino off` |
+| /sticker | Converts a photo to a sticker.  | `/sticker` |
+| /give | Adds an amount of experience to a user.  | `/give 50 | /dc | pede uma dica para o jogo. | `/dc dica` |` |
+| /setxp | Sets the amount of experience a user has.  | `/setxp 100 | /dc | pede uma dica para o jogo. | `/dc dica` |` |
+| /deleteuser | Deletes a user from the system.  | `/deleteuser +55123456789` |
+| Nexa | conversation with artificial intelligence.  | `Nexa Olá` |
 
 
 # bugs
