@@ -3,7 +3,6 @@ const fs = require("fs")
 const P = require("pino")
 const axios = require("axios")
 const {Boom} = require("@hapi/boom")
-const gis = require('g-i-s');
 const gtts = require('gtts');
 const { exec } = require('child_process');
 const moment = require("moment-timezone");
