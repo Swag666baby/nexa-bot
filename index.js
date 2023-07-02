@@ -8,6 +8,7 @@ const gtts = require('gtts');
 const { exec } = require('child_process');
 const moment = require("moment-timezone");
 const _ = require('lodash');
+const {GOOGLE_IMG_SCRAP} = require("google-img-scrap");
 const path = require('path');
 const YTB = require("youtube-sr").default;
 const babytube = require("babytube");
@@ -89,7 +90,7 @@ const startSock = async () => {
             antilink(fs, message, admin, antilinkGrupo, numeroUsuario, euBot, sock, jid, numero)
             actions(action, sock, jid, actionMember, groupName)
             youtubeSearch(message, YTB, sock, jid, msg, babytube)
-            //imgSearch(message, gis, sock, jid, msg )
+            imgSearch(message, GOOGLE_IMG_SCRAP, sock, jid, msg)
             sticker(legendaFoto, downloadMediaMessage, msg, logger, sock, fs, exec, jid, msg, fs)
             menu(moment, prefix, nameUser, message, sock, jid, msg) 
             nsfw(nsfwGrupo, message, sock, jid, msg)
