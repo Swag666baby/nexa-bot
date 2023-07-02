@@ -48,18 +48,18 @@ forever start --minUptime 1000 --spinSleepTime 1000 index.js
 | /menu   | Displays the list of available commands.  | `/menu`|
 | /fecharg | Closes a group.  | `/fecharg` |
 | /abrirg | Opens a group.  | `/abrirg` |
-| /promover | Promotes a user to an administrator.  | `/promover *marcando a mensagem de usuario*` |
-| /rebaixar | Demotes a user from admin.  | `/rebaixar *marcando a mensagem de usuario*` |
+| /promover | Promotes a user to an administrator.  | `/promover *marking user message* ` |
+| /rebaixar | Demotes a user from admin.  | `/rebaixar *marking user message* ` |
 | /add | Adds a phone number to the group.  | `/add +55123456789` |
-| /ban | Ban a user from the group.  | `/ban *marcando a mensagem de usuario*` |
-| /descg | Sets the group description.  | `/descg Nova descrição` |
-| /nomeg | Defines the name of the group.  | `/nomeg Novo nome` |
+| /ban | Ban a user from the group.  | `/ban *marking user message* ` |
+| /descg | Sets the group description.  | `/descg New description` |
+| /nomeg | Defines the name of the group.  | `/nomeg New name` |
 | /nivel | Displays user data.  | `/nivel` |
 | /roleta | Play a round of roulette.  | `/roleta 10` |
-| /agiotar | Lenders an amount to the user.  | `/agiotar 100 *marcando a mensagem de usuario*` |
+| /agiotar | Lenders an amount to the user.  | `/agiotar 100 *marking user message* ` |
 | /roletarussa | Play a game of Russian roulette.  | `/roletarussa` |
 | /doar | Make a donation to another user.  | `/doar 50` |
-| /investigar | Starts an investigation on a user.  | `/investigar *marcando a mensagem de usuario*` |
+| /investigar | Starts an investigation on a user.  | `/investigar *marking user message* ` |
 | /loteria | Performs a lottery draw.  | `/loteria 1 8` |
 | /dc | asks for a tip for the game.  | `/dc dica` |
 | /dc | guess the possible word.  | `/dc banana` |
@@ -75,15 +75,15 @@ forever start --minUptime 1000 --spinSleepTime 1000 index.js
 | /ytsearch | Performs a video search on YouTube. | `/ytsearch cute cats` |
 | /imgsearch | Performs an image search.  | `/imgsearch dog sitting ` |
 | /playmp3 | downloads a song.  | `/playmp3 all girls are the same` |
-| /nexaimg | generates an image with artificial intelligence.  | `/nexaimg cachorro branco` |
+| /nexaimg | generates an image with artificial intelligence.  | `/nexaimg white dog` |
 | /antilink | enable or disable link protection | `/antilink on` |
 | /nsfw | Enables or disables NSFW mode.  | `/nsfw on` |
 | /cassino | Enables or disables the casino feature.  | `/cassino off` |
 | /sticker | Converts a photo to a sticker.  | `/sticker` |
-| /give | Adds an amount of experience to a user.  | `/give 50 | /dc | pede uma dica para o jogo. | `/dc dica` |` |
-| /setxp | Sets the amount of experience a user has.  | `/setxp 100 | /dc | pede uma dica para o jogo. | `/dc dica` |` |
+| /give | Adds an amount of experience to a user.  | `/give 50`|
+| /setxp | Sets the amount of experience a user has.  | `/setxp 100` |
 | /deleteuser | Deletes a user from the system.  | `/deleteuser +55123456789` |
-| Nexa | conversation with artificial intelligence.  | `Nexa Olá` |
+| Nexa | conversation with artificial intelligence.  | `Nexa hi` |
 
 
 # bugs
