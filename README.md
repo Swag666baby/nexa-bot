@@ -1,5 +1,6 @@
 # nexa-bot
 my simply  robot made for WhatsApp using version 4.4.0 of the baileys library.
+the documentation is in english but it is 98% in pt-br. 
 
 # installation 
 ```
