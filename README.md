@@ -8,8 +8,7 @@ git clone https://github.com/Swag666baby/nexa-bot
 cd nexa-bot
 ```
 ```
-yarn add axios fs pino @adiwajshing/baileys@4.4.0 dotenv gtts google-img-scrap @hapi/boom lodash moment-timezone child_process path babytube youtube-sr qrcode-terminal forever
-apt-get install libwebp
+yarn add axios fs pino @adiwajshing/baileys@4.4.0 dotenv gtts google-img-scrap @hapi/boom lodash moment-timezone child_process path babytube youtube-sr sharp qrcode-terminal forever
 apt-get install python3
 ```
 I recommend using the forever library, however it is optional. 
